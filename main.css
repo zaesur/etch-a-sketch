@@ -1,9 +1,30 @@
-#container {
-  display: grid;
-  grid-gap: 1px;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  display: block;
+  text-align: center;
 }
 
 .pixel {
   background-color: rgb(0,0,0);
   opacity: 0.1;
+}
+
+#container {
+  margin: auto;
+  width: 90vh;
+  height: 90vh;
+  display: grid;
+  grid-gap: 1px;
+}
+
+#controls {
+  text-align: center;
 }
