@@ -8,4 +8,7 @@ for (let step = 0; step < dimension ** 2; step++) {
   container.appendChild(pixel);
 }
 pixels = document.querySelectorAll('.pixel');
-pixels.forEach(pixel => pixel.addEventListener('mouseover', e => e.target.style.backgroundColor = "black"));
+pixels.forEach(pixel => pixel.addEventListener('mouseover', e => {
+  const opacity = getComputedStyle(e.target).getPropertyValue('opacity');
+  e.target.style.setProperty('opacity', `${Math.min(parseFloat(opacity) + 0.1, 1)}`);
+}));
