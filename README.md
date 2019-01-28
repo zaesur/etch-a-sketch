@@ -5,3 +5,5 @@ Skills used:
 * CSS
 * JavaScript
 * DOM Manipulation
+
+[live preview](http://zaesur.github.io/etch-a-sketch)
